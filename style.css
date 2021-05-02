@@ -8,7 +8,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
-  color: #54575A;
+  color: #ffffff;
   background: linear-gradient(to bottom, #FFFFFF 0%, #F3F8F7 49.91%, #FFF9F5 94.19%);
 }
 
@@ -140,6 +140,7 @@ body {
 .background-toggles > div {
   height: 25px;
   width: 25px;
+  border: 2px solid white;
   border-radius: 5px;
   margin-right: 10px;
   box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
@@ -148,20 +149,40 @@ body {
 
 /* Background Colors */
 .background-1 {
-  background-color: #f2f2f2;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cacaca' fill-opacity='0.3' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #121212;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cacaca' fill-opacity='0.15' fill-rule='evenodd'%3E%3Ccircle cx='9' cy='9' r='9'/%3E%3Ccircle cx='39' cy='39' r='9'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .background-2 {
-  /* Zinc */
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  /* Pulse */
+    background: linear-gradient(270deg, #5f2db2, #2db267);
+    background-size: 400% 400%;
+
+    -webkit-animation: pulse 18s ease infinite;
+    -moz-animation: pulse 18s ease infinite;
+    animation: pulse 18s ease infinite;
 }
 
+@-webkit-keyframes pulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes pulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} 
+
+
 .background-3 {
-  /* Portrait */
+  /* Glow */
   background: #8e9eab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: -webkit-linear-gradient(to bottom, #00ccff, #ff9812);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #00ccff, #ff9812); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
